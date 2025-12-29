@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros da Bíblia - Marcação de Leitura</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-bible"></i> Livros da Bíblia</h1>
+            <p>Marque os livros que você já leu e acompanhe seu progresso de leitura</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Estatísticas -->
+        <section class="stats-container">
+            <div class="stat-card">
+                <h3>Total de Livros</h3>
+                <div class="number" id="total-books">66</div>
+            </div>
+            <div class="stat-card">
+                <h3>Livros Lidos</h3>
+                <div class="number" id="read-books">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Progresso</h3>
+                <div class="number" id="progress-percent">0%</div>
+            </div>
+        </section>
+
+        <!-- Filtros -->
+        <section class="filter-container">
+            <h2>Filtrar por:</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos os Livros</button>
+                <button class="filter-btn" data-filter="old-testament">Antigo Testamento</button>
+                <button class="filter-btn" data-filter="new-testament">Novo Testamento</button>
+                <button class="filter-btn" data-filter="read">Lidos</button>
+                <button class="filter-btn" data-filter="unread">Não Lidos</button>
+            </div>
+        </section>
+
+        <!-- Lista de Livros -->
+        <section id="books-section">
+            <h2>Livros da Bíblia</h2>
+            <div class="books-container" id="books-container">
+                <!-- Os livros serão inseridos aqui via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Controles -->
+        <section class="controls">
+            <button class="btn btn-success" id="mark-all-read">
+                <i class="fas fa-check-double"></i> Marcar Todos Como Lidos
+            </button>
+            <button class="btn btn-secondary" id="mark-all-unread">
+                <i class="fas fa-undo"></i> Desmarcar Todos
+            </button>
+            <button class="btn btn-primary" id="save-progress">
+                <i class="fas fa-save"></i> Salvar Progresso
+            </button>
+            <button class="btn btn-secondary" id="reset-progress">
+                <i class="fas fa-trash-alt"></i> Resetar Progresso
+            </button>
+        </section>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-bible"></i> Leitura da Bíblia
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-info-circle"></i> Sobre</a>
+                    <a href="#"><i class="fas fa-question-circle"></i> Ajuda</a>
+                    <a href="#"><i class="fas fa-share-alt"></i> Compartilhar</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2023 Leitura da Bíblia. Todos os direitos reservados. | Design com foco em Interação Humano-Computador
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
